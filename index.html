@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+
+     <div id="header">
+        <div class="container">
+            <nav>
+                <p class="logo">Shahd's Portfolio.</p>
+                <ul id="sidemenu">
+                    <li> <a href="#header">Home</a></li>
+                    <li> <a href="#about">About</a></li>
+                    <li> <a href="#services">Services</a></li>
+                    <li> <a href="#project">Projects</a></li>
+                    <li> <a href="#contact">Contact</a></li>
+                    <i class='bx bx-x' onclick="closemenu()" ></i>
+                </ul>
+                <i class='bx bx-menu'  onclick="openmenu()"> </i>
+            </nav>
+
+
+            <div class="header-text">
+                <p>AI Specialist</p>
+                <h1>Hi, I'm <span>Shahd Baroud</span> </h1>
+                <!-- <img src="imgg1-removebg-preview.png" alt="" class="img-first"> -->
+            </div>
+            
+
+        </div>
+     </div>
+     <div class="about" id="about">
+        <div class="container">
+            <div class="row">
+            <div class="about-col-1">
+                <img src="imgs/future.png" alt="" height="" >
+            </div>
+            <div class="about-col-2">
+                <h1 class="subtitle">About Me</h1>
+                <p>Recent graduate with AI degree, passionate about machine and deep learning, I like automating daily tasks and enjoy dealing with data, I spent most of my time coding, writing and listening to music.
+                </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active" onclick=" opentab('skills') ">Skills</p>
+                        <p class="tab-links" onclick=" opentab('Coop Training') ">Coop Training</p>
+                        <p class="tab-links"  onclick=" opentab('Education') ">Education</p>
+                    </div>
+
+                    <div class="tab-content active-tab" id="skills">
+                        <ul>
+                            <li><span>AI Developer</span> <br> Developing smart customized models.</li>
+                            <li><span>UI/UX</span> <br> Design web application interfaces.</li>
+                            <li><span>Web Development</span> <br> Web app developments.</li>
+                           
+
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="Coop Training">
+                        <ul>
+                            <li><span>Jun-Aug 2022</span> <br> Computer Vision Trainee at Expert Vision Company.</li>
+                            <li><span>Work Achivements</span> <br>
+                            <li>Utlized Yolov4 to detect and count people who are moving towards oppisite direction </li>
+                            <li>Enhaced the performance and the speed of the model, and the accuarcy increased</li>
+                            <li><span>Winner of coding contest </span> <br> Won the first place various times in solving coding challanges.</li>
+
+                    </div>
+                    <div class="tab-content" id="Education">
+                        <ul>
+                            <li><span>Sep 2018- Mar 2023</span> <br> AI graduate with first honor</li>
+                            <li><span>Achivements</span> <br>
+                            <li>Exellence Certificates  </li>
+                            <li>First Place Winner as The Best Senior Project </li>
+
+                         
+
+                          
+                        </ul>
+                    </div>
+
+                    <br><br><br><br><br><br><br><br><br><br>
+            </div>
+        </div>
+    </div>
+     </div>
+<!-- -------------Services-------------------- -->
+<div id="services">
+    <div class="container">
+    <h1 class="subtitle">My Services</h1>
+    <div class="service-list">
+
+        <div>
+            <i class='bx bxs-data'></i>
+            <h2>Data Modeling</h2>
+            <p>Libraries: <br>Sicket-learn,TensorFlow, Keras, Numpy, Pandas, Seaborn,Matplot</p>
+            <br>
+            <p>Languages & Tools:<br> Power Bi, Sql, Python ,R</p>
+            <a href="#">learn more</a>
+        </div>
+
+        <div>
+            <i class='bx bx-code-alt'></i>
+            <h2>Web Design</h2>
+            <p>Tools: <br>Figma, Canva</p>
+            <br>
+            <p>Languages :<br> HTML, CSS, JavaScript, Python. </p>
+            <a href="#">learn more</a>
+        </div>
+
+        <div>
+            <i class='bx bxs-report'></i>
+            <h2>Analysis & Reporting</h2>
+            <p>Tools: <br>Excel, Microsoft Office, Power Bi ,Over Leaf, Python </p>
+            <a href="#">learn more</a>
+        </div>
+    </div>
+</div>
+</div>
+
+<div class="project" id="project">
+    <div class="container">
+        <h1 class="subtitle">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="imgs/nabtaa.jpg" height="300px">
+                <div class="layer">
+                    <h3>Smart Irrigation System (Winner of the best senior project)</h3>
+                    <p>Based on the ML model the system will irrigate the plant without any human intervention.</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="imgs/jeddah.jpg" height="300px">
+                <div class="layer">
+                    <h3>System Recommendation for Jeddah City Resturants</h3>
+                    <p>After collecting data from google reviews, the system is able to recommend.</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="imgs/HAJJ.jpg" height="300px">
+                <div class="layer">
+                    <h3>Using computer vision in Hajj</h3>
+                    <p>Counting people who are moving twoards the oppiste direction and causing traffic build up.</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<!-- ------------contact------------- -->
+
+    <div class="contact" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1>Contact Me</h1>
+                    <p><a href="mailto:shahadbaroud20@gmail.com"><i class='bx bxs-envelope'> Shahadbaroud20@gmail.com</i></a> </p>
+                    <p><i class='bx bx-phone'> +966536841639</i></p>
+    
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/shahd-baroud-/" target=”_blank”><i class='bx bxl-linkedin'></i></a>
+                        <a href="https://twitter.com/ShahadBarood" target=”_blank”><i class='bx bxl-twitter'></i></a>
+                        <a href="https://github.com/shahadIbrahim2" target=”_blank”><i class='bx bxl-github'></i></a>
+                        <a href="Shahd Baroud - Artificial Intelligence Graduate   (2).pdf" download>Download CV</a>
+
+
+
+                    </div>
+               <!-- <a href="" class="btn">Download Cv</a> -->
+                </div>
+                <div class="contact-right">
+
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="submit">Submit</button>
+                    </form>
+                    <span id="msg"> </span>
+                </div>
+            </div>
+        </div>   
+
+        <div class="copyright">
+            <p>Made with <i class='bx bxs-heart'></i>  By Shahd Baroud &copy;2023</p>
+        </div>
+    </div>
+ <!-- -----------------------JS---------------------   -->
+     <script >
+        var tablinks= document.getElementsByClassName("tab-links");
+        var tabcontent= document.getElementsByClassName("tab-content");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active")
+            }
+            for(content of tabcontent){
+                content.classList.remove("active-tab")
+            }
+
+            event.currentTarget.classList.add("active");
+            document.getElementById(tabname).classList.add("active-tab");
+
+        }
+     </script>
+     <script>
+        var sidemenu= document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right="0";
+        }
+        
+        function closemenu(){
+            sidemenu.style.right="-200px";
+        }
+     </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbw8O7_yDmJtXSbG9tAdwgC555fLvR0JBZoMvciDQ0abNURV0ZASC7i4yYYiFeoK0K8V/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg =document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sen successfully"
+            setTimeout(function() 
+            {
+                msg.innerHTML= "";
+            }
+            ,5000)
+            form.reset();
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
